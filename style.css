@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+body{
+    background-color:rgb( 224,224,206 );
+}
+h1{
+   color:rgb(222, 241, 250) ; 
+   background-color:rgb( 162,103,105 ) ;
+   height:5rem;
+   /* agr line-heigth ko 5rem(heigth jitni hi) de text center me aa jaega */
+   line-height: 5rem; 
+}
+.choice{
+    /* padding:1.5rem; */
+    height:190px;
+    width: 190px;
+    border-radius: 50%;
+      /* abhi img ki piche wli div(choice) proper center me nhi aa rhi,therefore use flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+   background-color: black;
+    cursor:pointer;
+}
+img{
+    height:180px;
+    width:180px;
+    object-fit:cover;
+    border-radius:50%;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin-top:5rem;
+}
+.score-board{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;gap:5rem;
+}
+#user-score,#robot-score{
+    font-size: 4rem;
+}
+.msg-container{
+    margin-top:5rem;
+}
+#msg{
+    background-color: rgb(247, 37, 133 );
+    color: white;
+    font-size: 2rem;
+    /* //since sirf content jitna box chahte hai therefore inline */
+    display:inline-block;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
